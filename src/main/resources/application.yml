@@ -24,10 +24,10 @@ spring:
           uri: http://localhost:8084
           predicates:
             - Path= /mypages/**
-        - id: Health
+        - id: health
           uri: http://localhost:8085
           predicates:
-            - Path=/Health/**
+            - Path=/healths/**
       globalcors:
         corsConfigurations:
           '[/**]':
@@ -63,10 +63,10 @@ spring:
           uri: http://customercenter:8080
           predicates:
             - Path= /mypages/**
-        - id: Health
-          uri: http://Health:8080
+        - id: health
+          uri: http://health:8080
           predicates:
-            - Path=/health/** 
+            - Path=/healths/** 
       globalcors:
         corsConfigurations:
           '[/**]':
